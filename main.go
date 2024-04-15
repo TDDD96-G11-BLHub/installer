@@ -14,7 +14,7 @@ func main() {
 	w := a.NewWindow("BLHub Installer")
 
 	logo := canvas.NewImageFromResource(assets.BLHubIconDark)
-	logo.FillMode = canvas.ImageFillOriginal
+	logo.FillMode = canvas.ImageFillContain
 
 	start := widget.NewButton("Start installation", nil)
 	start.Importance = widget.HighImportance
